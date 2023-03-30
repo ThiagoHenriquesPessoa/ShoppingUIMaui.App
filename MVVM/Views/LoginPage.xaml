@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ShoppingUIMaui.MVVM.Views.LoginPage"
+             Title="LoginPage">
+    <ContentPage.Content>
+        <Grid>
+            <Image Source="bg.jpg" VerticalOptions="Fill" Aspect="Fill"/>
+            <Grid HorizontalOptions="Center" VerticalOptions="Center" Padding="10">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto" />
+                    <RowDefinition Height="auto" />
+                    <RowDefinition Height="auto" />
+                    <RowDefinition Height="auto" />
+                    <RowDefinition Height="auto" />
+                    <RowDefinition Height="auto" />
+                </Grid.RowDefinitions>
+
+                <Label Grid.Row="0" Grid.Column="0" Text="User Name" TextColor="#2c363c" FontSize="17" FontAttributes="Bold" />
+                <Frame Grid.Row="1" Grid.Column="0" HeightRequest="50">
+                    <Entry TextColor="White" HeightRequest="48" WidthRequest="200" />
+                </Frame>
+
+                <Label Grid.Row="2" Text="Password" TextColor="#2c363c" FontSize="17" FontAttributes="Bold" />
+                <Frame Grid.Row="3" HeightRequest="50">
+                    <Entry IsPassword="True" TextColor="White" HeightRequest="48" WidthRequest="200" />
+                </Frame>
+
+                <Grid Grid.Row="4" Padding="0,40,0,0">
+                    <VerticalStackLayout Spacing="20">
+                        <Button Text="Login" TextColor="White" BackgroundColor="#2c363c" HeightRequest="40" WidthRequest="100" />
+                        <Button Text="Register" TextColor="White" BackgroundColor="#2c363c" HeightRequest="40" WidthRequest="100" />
+                    </VerticalStackLayout>
+                </Grid>
+            </Grid>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
