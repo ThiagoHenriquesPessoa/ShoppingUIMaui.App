@@ -1,4 +1,6 @@
-﻿namespace ShoppingUIMaui;
+﻿using ShoppingUIMaui.MVVM.Views;
+
+namespace ShoppingUIMaui;
 
 public partial class App : Application
 {
@@ -6,6 +8,6 @@ public partial class App : Application
 	{
 		InitializeComponent();
 
-		MainPage = new AppShell();
+		MainPage = new LoginPage();
 	}
 }
